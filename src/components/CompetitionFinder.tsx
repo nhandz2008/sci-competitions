@@ -1,20 +1,24 @@
+"use client";
+
 import { useState, useMemo } from "react";
 import competitions from "@/data/competitions.json";
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
-  Button,
-  Card,
-  CardContent,
   Dialog,
   DialogTrigger,
   DialogContent,
   DialogHeader,
   DialogTitle,
-  Input,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import {
   Select,
   SelectTrigger,
   SelectContent,
   SelectItem,
-} from "@/components/ui"; // ← có dùng shadcn
+} from "@/components/ui/select"; // ← có dùng shadcn
 
 interface Competition {
   id: string;
